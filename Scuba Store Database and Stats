@@ -1,0 +1,22 @@
+CREATE TABLE scuba_store (id INTEGER PRIMARY KEY, item TEXT, brand TEXT, cost INTEGER, price INTEGER);
+
+INSERT INTO store VALUES (1, "Regulator", "Aqua Lung", 350, 500);
+INSERT INTO store VALUES (2, "Regulator", "Cressi", 250, 380);
+INSERT INTO store VALUES (3, "BCD", "Aqua Lung", 599, 999);
+INSERT INTO store VALUES (4, "BCD", "Cressi", 325, 595);
+INSERT INTO store VALUES (5, "Mask", "TUSA", 200, 220);
+INSERT INTO store VALUES (6, "Mask", "Atomic", 150, 179);
+INSERT INTO store VALUES (7, "Fins", "Cressi", 43, 60);
+INSERT INTO store VALUES (8, "Mask Strap Cover", "Cressi", 5, 9);
+INSERT INTO store VALUES (9, "Tank", "Catalina", 200, 294);
+INSERT INTO store VALUES (10, "Weights", "Sea Pearls", 8,13);
+INSERT INTO store VALUES (11, "Defogger", "Frog Spit", 6, 13);
+INSERT INTO store VALUES (12, "Lionfish Spear", "Trident", 23, 31);
+INSERT INTO store VALUES (13, "Gloves", "NRS", 31, 40);
+INSERT INTO store VALUES (14, "Shorty", "Cressi", 53, 70);
+INSERT INTO store VALUES (15, "Computer", "Garmin", 600, 670);
+SELECT * FROM store;
+
+SELECT * FROM store ORDER BY price asc;
+
+SELECT MAX(cost) FROM store;
